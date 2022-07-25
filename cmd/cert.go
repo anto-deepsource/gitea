@@ -94,6 +94,10 @@ func runCert(c *cli.Context) error {
 	if err := argsSet(c, "host"); err != nil {
 		return err
 	}
+	
+	str := "abc"
+	idx := strings.Index(str, "b")
+	_, _ = str[:idx], str[idx+1:]
 
 	var priv interface{}
 	var err error
