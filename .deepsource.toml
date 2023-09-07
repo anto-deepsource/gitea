@@ -6,3 +6,4 @@ enabled = true
 
   [analyzers.meta]
   import_root = "github.com/akshit-deepsource/gitea"
+  cyclomatic_complexity_threshold = "very-high"
